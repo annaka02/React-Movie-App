@@ -25,9 +25,9 @@ function Home() {
             finally {
                 setLoading(false)
             }
-        }
+        };
         loadPopularMovies()
-    }, [])
+    }, []);
 
 
     const handleSearch = async(e) =>{
@@ -46,7 +46,7 @@ function Home() {
             setLoading(false)
         }
     };
-    
+
     return (<div className="home">
          <form onSubmit={handleSearch} className="search-form">
             <input type="text"  
